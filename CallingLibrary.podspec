@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-'This project will add to calling ,sms and email functionality.'
+'This project will add to calling ,sms and email functionality.Just import the library and you can easy call,sms and email functionality'
                        DESC
 
   s.homepage         = 'https://github.com/Satyam Kumar/CallingLibrary'
