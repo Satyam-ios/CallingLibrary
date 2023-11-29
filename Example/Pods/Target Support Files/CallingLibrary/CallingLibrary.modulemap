@@ -1,0 +1,6 @@
+framework module CallingLibrary {
+  umbrella header "CallingLibrary-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "CallingLibrary",
+  "version": "0.1.0",
+  "summary": "A short description of CallingLibrary.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Satyam Kumar/CallingLibrary",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Satyam Kumar": "satyam.kumar@vgroup.net"
+  },
+  "source": {
+    "git": "https://github.com/Satyam Kumar/CallingLibrary.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "CallingLibrary/Classes/**/*"
+}

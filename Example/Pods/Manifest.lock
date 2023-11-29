@@ -1,0 +1,16 @@
+PODS:
+  - CallingLibrary (0.1.0)
+
+DEPENDENCIES:
+  - CallingLibrary (from `../`)
+
+EXTERNAL SOURCES:
+  CallingLibrary:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  CallingLibrary: 6781500221466a046508d1f8b9c0953b9065c5dd
+
+PODFILE CHECKSUM: 999b5cf9fad6b9c70332196b0aa89b601727cf9e
+
+COCOAPODS: 1.12.1
