@@ -120,7 +120,7 @@
 		0EE7A06CE0C713B0582DBB16685CFEDB /* CallingLibrary */ = {
 			isa = PBXGroup;
 			children = (
-				A1C929B52B171083009E7FFF /* Custom */,
+				A1C929B62B1710C4009E7FFF /* IBDesignableFiles.swift */,
 				A14D57202B16196E003CCB4C /* CallingPage.swift */,
 				CCEC41E8CE4D9D09697D845F15415542 /* Pod */,
 				02C7AAB197FD59A90CC2FD5D699EBD84 /* Support Files */,
@@ -187,14 +187,6 @@
 			);
 			name = "Pods-CallingLibrary_Example";
 			path = "Target Support Files/Pods-CallingLibrary_Example";
-			sourceTree = "<group>";
-		};
-		A1C929B52B171083009E7FFF /* Custom */ = {
-			isa = PBXGroup;
-			children = (
-				A1C929B62B1710C4009E7FFF /* IBDesignableFiles.swift */,
-			);
-			path = Custom;
 			sourceTree = "<group>";
 		};
 		C93308659BA0F1DB0DFDA975418BE73A /* Development Pods */ = {
