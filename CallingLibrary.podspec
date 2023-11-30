@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-'This project will add to calling ,sms and email functionality.Just import the library and you can easy call,sms and email functionality'
+This project will add to calling ,sms and email functionality.Just import the library and you can easy call,sms and email functionality
                        DESC
 
   s.homepage         = 'https://github.com/Satyam Kumar/CallingLibrary'
@@ -30,13 +30,19 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '13.0'
 
-  s.source_files = 'CallingLibrary/Classes/**/*'
+  #s.source_files = 'CallingLibrary/Classes/**/*/swift'
+  
+  s.source_files = 'Classes/**/*.swift'
+  s.swift_version = '5.0'
+  s.platforms = {
+      "ios" = "13.0"
+  }
   
   # s.resource_bundles = {
   #   'CallingLibrary' => ['CallingLibrary/Assets/*.png']
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
+   s.frameworks = 'UIKit'
   # s.dependency 'AFNetworking', '~> 2.3'
 end
