@@ -21,28 +21,28 @@ Pod::Spec.new do |s|
 This project will add to calling ,sms and email functionality.Just import the library and you can easy call,sms and email functionality
                        DESC
 
-  s.homepage         = 'https://github.com/Satyam Kumar/CallingLibrary'
+  s.homepage         = 'https://github.com/Satyam-ios/CallingLibrary'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Satyam Kumar' => 'satyam.kumar@vgroup.net' }
-  s.source           = { :git => 'https://github.com/Satyam Kumar/CallingLibrary.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/Satyam-ios/CallingLibrary.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+#https://github.com/Satyam-ios/CallingLibrary
+  s.ios.deployment_target = '11.0'
 
-  s.ios.deployment_target = '13.0'
-
-  #s.source_files = 'CallingLibrary/Classes/**/*/swift'
+  s.source_files = 'CallingLibrary/Classes/**/*'
   
-  s.source_files = 'Classes/**/*.swift'
+  #s.source_files = 'Classes/**/*'
   s.swift_version = '5.0'
-  s.platforms = {
-      "ios" = "13.0"
-  }
+  #s.platforms = {
+  #    "ios" = "11.0"
+  #}
   
-  # s.resource_bundles = {
-  #   'CallingLibrary' => ['CallingLibrary/Assets/*.png']
-  # }
+   #s.resource_bundles = {
+   #  'CallingLibrary' => ['CallingLibrary/Assets/*.png']
+   #}
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-   s.frameworks = 'UIKit'
+  s.frameworks = 'UIKit'
   # s.dependency 'AFNetworking', '~> 2.3'
 end

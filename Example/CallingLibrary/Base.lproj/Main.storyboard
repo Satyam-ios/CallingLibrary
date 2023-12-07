@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
-    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
@@ -17,11 +17,11 @@
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gmp-Yd-Llu" customClass="ViewDesign" customModule="CallingLibrary">
-                                <rect key="frame" x="123.5" y="269.5" width="128" height="128"/>
+                                <rect key="frame" x="143" y="384" width="128" height="128"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="128" id="O7U-uH-eYO"/>
@@ -39,20 +39,118 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="DRI-7W-Lgq">
+                                <rect key="frame" x="100" y="550" width="214" height="40"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KA8-jK-qof" customClass="CallingIcons" customModule="CallingLibrary">
+                                        <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="gch-L5-Wlg"/>
+                                            <constraint firstAttribute="width" constant="40" id="zve-QZ-nJt"/>
+                                        </constraints>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="SetCustomIcon" value="IMG_6457"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="btnShodow">
+                                                <real key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cournerRadius">
+                                                <real key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eei-TM-Seh" customClass="CallViewIcons" customModule="CallingLibrary">
+                                        <rect key="frame" x="58" y="0.0" width="40" height="40"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <connections>
+                                            <action selector="actionOnCallBtn:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="zvf-eI-371"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4UC-OG-r1C" customClass="SmsViewIcons" customModule="CallingLibrary">
+                                        <rect key="frame" x="116" y="0.0" width="40" height="40"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <connections>
+                                            <action selector="actionOnSmsBtn:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="JDD-HI-Wy3"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hbt-EP-F2d" customClass="EmailViewIcons" customModule="CallingLibrary">
+                                        <rect key="frame" x="174" y="0.0" width="40" height="40"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <connections>
+                                            <action selector="actionOnEmailBtn:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Bha-JK-krg"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GI2-mx-umS">
+                                <rect key="frame" x="47" y="651" width="320" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="CnG-P3-bJI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="doneAccessory" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="8wo-na-hUn">
+                                <rect key="frame" x="47" y="734" width="320" height="128"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="doneAccessory" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </textView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="GI2-mx-umS" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="27" id="4Yy-v5-QL5"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="GI2-mx-umS" secondAttribute="trailing" constant="27" id="CgQ-jR-t9A"/>
                             <constraint firstItem="gmp-Yd-Llu" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="HeZ-6p-ASi"/>
+                            <constraint firstItem="GI2-mx-umS" firstAttribute="top" secondItem="DRI-7W-Lgq" secondAttribute="bottom" constant="61" id="LAz-AI-wqy"/>
+                            <constraint firstItem="DRI-7W-Lgq" firstAttribute="top" secondItem="gmp-Yd-Llu" secondAttribute="bottom" constant="38" id="Ryv-IG-kss"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="8wo-na-hUn" secondAttribute="bottom" id="aRu-MK-Qf0"/>
+                            <constraint firstItem="8wo-na-hUn" firstAttribute="trailing" secondItem="GI2-mx-umS" secondAttribute="trailing" id="d3y-oF-6rH"/>
+                            <constraint firstItem="8wo-na-hUn" firstAttribute="top" secondItem="GI2-mx-umS" secondAttribute="bottom" constant="33" id="mb5-vN-vuJ"/>
+                            <constraint firstItem="DRI-7W-Lgq" firstAttribute="centerX" secondItem="gmp-Yd-Llu" secondAttribute="centerX" id="q44-CG-aYm"/>
+                            <constraint firstItem="8wo-na-hUn" firstAttribute="leading" secondItem="GI2-mx-umS" secondAttribute="leading" id="qTh-P5-3eX"/>
                             <constraint firstItem="gmp-Yd-Llu" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="rSB-ag-U5l"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="76" y="-1"/>
+            <point key="canvasLocation" x="75.362318840579718" y="-1.3392857142857142"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="4UC-OG-r1C">
+            <size key="intrinsicContentSize" width="30" height="30"/>
+        </designable>
+        <designable name="KA8-jK-qof">
+            <size key="intrinsicContentSize" width="30" height="30"/>
+        </designable>
+        <designable name="eei-TM-Seh">
+            <size key="intrinsicContentSize" width="30" height="30"/>
+        </designable>
+        <designable name="hbt-EP-F2d">
+            <size key="intrinsicContentSize" width="30" height="30"/>
+        </designable>
+    </designables>
     <resources>
+        <image name="IMG_6457" width="811" height="1178"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

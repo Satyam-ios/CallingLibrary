@@ -14,6 +14,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
        let log = CallingPage()
         log.printMethod()
+        self.DoneKeyboard(dismissOnTap: true)
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,5 +22,20 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+}
+extension ViewController{
+    @IBAction func actionOnCallBtn(_ sender:UIButton){
+        print("actionOnCallBtn")
+    }
+    
+    @IBAction func actionOnSmsBtn(_ sender:UIButton){
+        print("actionOnSmsBtn")
+        SmsHandleView.onPresent(on: self){_ in
+            print("actionOnSmsBtn 22")
+        }
+    }
+    @IBAction func actionOnEmailBtn(_ sender:UIButton){
+        print("actionOnEmailBtn")
+    }
 }
 
