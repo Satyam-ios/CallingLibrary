@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 53;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,7 @@
 		62A59A421AA5B1328F7270DC0483610E /* Pods-CallingLibrary_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D3658D023325E7DC532D4ED83BD696A8 /* Pods-CallingLibrary_Example-dummy.m */; };
 		9114F9FA4CEDDFF162806B0AA3518433 /* Pods-CallingLibrary_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 728B171D3B1ECC38BF6911E5753A6559 /* Pods-CallingLibrary_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		924C1BD64EC68EFE79810D69AB1E47D7 /* Pods-CallingLibrary_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C70ACFB0E8F6234046E749A07541849B /* Pods-CallingLibrary_Tests-dummy.m */; };
+		A152DC2F2B6BDBC0000787DA /* Frameworks in Resources */ = {isa = PBXBuildFile; fileRef = A152DC2E2B6BDBC0000787DA /* Frameworks */; };
 		A1690B6B2B19EA5A00BEA0B8 /* envelope.png in Resources */ = {isa = PBXBuildFile; fileRef = A1690B692B19EA4E00BEA0B8 /* envelope.png */; };
 		A1690B6E2B19EAC500BEA0B8 /* phone-call.png in Resources */ = {isa = PBXBuildFile; fileRef = A1690B6D2B19EAC500BEA0B8 /* phone-call.png */; };
 		A1690B722B19EB6400BEA0B8 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1690B712B19EB6400BEA0B8 /* Constant.swift */; };
@@ -66,6 +67,7 @@
 		86FF53EF9C91B093D006AC5EE136DBB3 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		8C53BBF0A5488E5F974451DCE5A16868 /* CallingLibrary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CallingLibrary.debug.xcconfig; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A152DC2E2B6BDBC0000787DA /* Frameworks */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Frameworks; sourceTree = "<group>"; };
 		A1690B692B19EA4E00BEA0B8 /* envelope.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = envelope.png; sourceTree = "<group>"; };
 		A1690B6D2B19EAC500BEA0B8 /* phone-call.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "phone-call.png"; path = "../CallingLibrary/Assets/phone-call.png"; sourceTree = "<group>"; };
 		A1690B712B19EB6400BEA0B8 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Constant.swift; path = CallingLibrary/Classes/Constant.swift; sourceTree = "<group>"; };
@@ -144,6 +146,7 @@
 				A1C9C7802B18809400EDEC36 /* CallingPage.swift */,
 				A1C9C7822B1880B900EDEC36 /* IBDesignableFiles.swift */,
 				A1690B712B19EB6400BEA0B8 /* Constant.swift */,
+				A152DC2E2B6BDBC0000787DA /* Frameworks */,
 				A1690B792B1A086B00BEA0B8 /* SMSViewController.swift */,
 				A1690B7B2B1A099F00BEA0B8 /* SmsHandleView.swift */,
 				A1690B7D2B1A0CFC00BEA0B8 /* CallViewController.swift */,
@@ -390,6 +393,7 @@
 				A1690B742B19EC0700BEA0B8 /* messenger.png in Resources */,
 				A1690B6E2B19EAC500BEA0B8 /* phone-call.png in Resources */,
 				A1690B822B1A1A3600BEA0B8 /* Cancel.png in Resources */,
+				A152DC2F2B6BDBC0000787DA /* Frameworks in Resources */,
 				A1690B802B1A0CFC00BEA0B8 /* CallViewController.xib in Resources */,
 				A1690B6B2B19EA5A00BEA0B8 /* envelope.png in Resources */,
 			);

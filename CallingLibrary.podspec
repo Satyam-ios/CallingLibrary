@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'CallingLibrary'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'This project will add to calling ,sms and email functionality.'
 
 # This description is used to generate tags and improve search results.
@@ -30,7 +30,10 @@ This project will add to calling ,sms and email functionality.Just import the li
 #https://github.com/Satyam-ios/CallingLibrary
   s.ios.deployment_target = '11.0'
 
-  s.source_files = 'CallingLibrary/Classes/**/*'
+  #s.source_files = 'CallingLibrary/Classes/**/*'
+  
+  # Specify the location of the precompiled binaries
+    s.vendored_frameworks = 'Frameworks/*.framework'
   
   #s.source_files = 'Classes/**/*'
   s.swift_version = '5.0'
