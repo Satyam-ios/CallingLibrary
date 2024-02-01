@@ -1,0 +1,11 @@
+framework module CallingLibrary {
+  umbrella header "CallingLibrary-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module CallingLibrary.Swift {
+  header "CallingLibrary-Swift.h"
+  requires objc
+}
