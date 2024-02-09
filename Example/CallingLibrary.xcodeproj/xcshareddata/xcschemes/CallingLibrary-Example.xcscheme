@@ -61,6 +61,17 @@
                ReferencedContainer = "container:CallingLibrary.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "A17AB2712B761683004B767A"
+               BuildableName = "CallingLibraryFrameworkTests.xctest"
+               BlueprintName = "CallingLibraryFrameworkTests"
+               ReferencedContainer = "container:CallingLibrary.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
