@@ -23,6 +23,7 @@
 		A1690B7F2B1A0CFC00BEA0B8 /* CallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1690B7D2B1A0CFC00BEA0B8 /* CallViewController.swift */; };
 		A1690B802B1A0CFC00BEA0B8 /* CallViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1690B7E2B1A0CFC00BEA0B8 /* CallViewController.xib */; };
 		A1690B822B1A1A3600BEA0B8 /* Cancel.png in Resources */ = {isa = PBXBuildFile; fileRef = A1690B812B1A1A3600BEA0B8 /* Cancel.png */; };
+		A1B9FAC92B84C38C00C6D811 /* CallingLibrary.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1B9FAC82B84C38B00C6D811 /* CallingLibrary.xcframework */; };
 		A1C9C7812B18809400EDEC36 /* CallingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C9C7802B18809400EDEC36 /* CallingPage.swift */; };
 		A1C9C7832B1880B900EDEC36 /* IBDesignableFiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C9C7822B1880B900EDEC36 /* IBDesignableFiles.swift */; };
 		C554CED4BB057FCB6BB6B4F654C2F1CB /* CallingLibrary-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 37F7905DED27329FBF72145EDB3A9793 /* CallingLibrary-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -75,6 +76,7 @@
 		A1690B7D2B1A0CFC00BEA0B8 /* CallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CallViewController.swift; path = CallingLibrary/Classes/CallViewController.swift; sourceTree = "<group>"; };
 		A1690B7E2B1A0CFC00BEA0B8 /* CallViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = CallViewController.xib; path = CallingLibrary/Classes/CallViewController.xib; sourceTree = "<group>"; };
 		A1690B812B1A1A3600BEA0B8 /* Cancel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cancel.png; sourceTree = "<group>"; };
+		A1B9FAC82B84C38B00C6D811 /* CallingLibrary.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = CallingLibrary.xcframework; sourceTree = "<group>"; };
 		A1C9C7802B18809400EDEC36 /* CallingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CallingPage.swift; path = CallingLibrary/Classes/CallingPage.swift; sourceTree = "<group>"; };
 		A1C9C7822B1880B900EDEC36 /* IBDesignableFiles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = IBDesignableFiles.swift; path = CallingLibrary/Classes/IBDesignableFiles.swift; sourceTree = "<group>"; };
 		ABDC9016610EC0BD0D4AEF03919E4D0A /* CallingLibrary.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = CallingLibrary.podspec; sourceTree = "<group>"; tabWidth = 2; };
@@ -105,6 +107,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1B9FAC92B84C38C00C6D811 /* CallingLibrary.xcframework in Frameworks */,
 				E03489E3377DC96E85D534C0C2A69B3B /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,6 +141,7 @@
 		0EE7A06CE0C713B0582DBB16685CFEDB /* CallingLibrary */ = {
 			isa = PBXGroup;
 			children = (
+				A1B9FAC82B84C38B00C6D811 /* CallingLibrary.xcframework */,
 				A1690B6C2B19EAA700BEA0B8 /* Resouces */,
 				CCEC41E8CE4D9D09697D845F15415542 /* Pod */,
 				02C7AAB197FD59A90CC2FD5D699EBD84 /* Support Files */,

@@ -33,7 +33,7 @@ This project will add to calling ,sms and email functionality.Just import the li
   #s.source_files = 'CallingLibrary/Classes/**/*'
   
   # Specify the location of the precompiled binaries
-    s.vendored_frameworks = 'Products/CallingLibrary.framework'
+    s.vendored_frameworks = 'CallingLibrary.xcframework'
   
   #s.source_files = 'Classes/**/*'
   s.swift_version = '5.0'
