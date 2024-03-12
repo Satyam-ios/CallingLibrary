@@ -30,10 +30,12 @@ This project will add to calling ,sms and email functionality.Just import the li
 #https://github.com/Satyam-ios/CallingLibrary
   s.ios.deployment_target = '11.0'
 
-  #s.source_files = 'CallingLibrary/Classes/**/*'
+#publish time to change the framework
+  s.source_files = 'CallingLibrary/Classes/**/*'
   
   # Specify the location of the precompiled binaries
-    s.vendored_frameworks = 'CallingLibrary.xcframework'
+  #run time to change the sourcefile
+  #  s.vendored_frameworks = 'CallingLibrary.xcframework'
   
   #s.source_files = 'Classes/**/*'
   s.swift_version = '5.0'
@@ -47,5 +49,6 @@ This project will add to calling ,sms and email functionality.Just import the li
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   s.frameworks = 'UIKit'
+  s.dependency 'TwilioVoice';
   # s.dependency 'AFNetworking', '~> 2.3'
 end
