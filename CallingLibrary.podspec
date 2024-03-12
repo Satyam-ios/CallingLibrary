@@ -31,7 +31,7 @@ This project will add to calling ,sms and email functionality.Just import the li
   s.ios.deployment_target = '11.0'
 
 #publish time to change the framework
-  s.source_files = 'CallingLibrary/Classes/Resources/call'
+  #s.source_files = 'CallingLibrary/Classes/Resources/call'
   
   # Specify the location of the precompiled binaries
   #run time to change the sourcefile
