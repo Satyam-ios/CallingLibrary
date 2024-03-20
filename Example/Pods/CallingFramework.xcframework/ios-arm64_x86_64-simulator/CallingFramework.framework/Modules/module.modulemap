@@ -1,0 +1,11 @@
+framework module CallingFramework {
+  umbrella header "CallingFramework.h"
+  export *
+
+  module * { export * }
+}
+
+module CallingFramework.Swift {
+  header "CallingFramework-Swift.h"
+  requires objc
+}

@@ -1,0 +1,186 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
+// swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name CallingFramework
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import AVFoundation
+import CallKit
+@_exported import CallingFramework
+import CoreLocation
+import Foundation
+import PushKit
+import Swift
+import TwilioVoice
+import UIKit
+import WebKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class CountryCodeViewController : UIKit.UIViewController {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewWillLayoutSubviews()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewWillAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+extension CallingFramework.CountryCodeViewController : UIKit.UITableViewDelegate {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func tableView(_ tableView: UIKit.UITableView, didSelectRowAt indexPath: Foundation.IndexPath)
+}
+extension CallingFramework.CountryCodeViewController : UIKit.UITableViewDataSource {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func numberOfSections(in tableView: UIKit.UITableView) -> Swift.Int
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func tableView(_ tableView: UIKit.UITableView, numberOfRowsInSection section: Swift.Int) -> Swift.Int
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func tableView(_ tableView: UIKit.UITableView, cellForRowAt indexPath: Foundation.IndexPath) -> UIKit.UITableViewCell
+}
+extension CallingFramework.CountryCodeViewController : UIKit.UISearchBarDelegate {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func searchBar(_ searchBar: UIKit.UISearchBar, textDidChange searchText: Swift.String)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func searchBarTextDidBeginEditing(_ searchBar: UIKit.UISearchBar)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func searchBarTextDidEndEditing(_ searchBar: UIKit.UISearchBar)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func searchBarCancelButtonClicked(_ searchBar: UIKit.UISearchBar)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func searchBarSearchButtonClicked(_ searchBar: UIKit.UISearchBar)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func searchBarShouldBeginEditing(_ searchBar: UIKit.UISearchBar) -> Swift.Bool
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class EmailValidationSetUp : CallingFramework.BaseViewController {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewWillLayoutSubviews()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+extension CallingFramework.EmailValidationSetUp : UIKit.UITextViewDelegate {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func textViewDidBeginEditing(_ textView: UIKit.UITextView)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func textViewDidEndEditing(_ textView: UIKit.UITextView)
+}
+extension CallingFramework.EmailValidationSetUp : UIKit.UITextFieldDelegate {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func textFieldDidEndEditing(_ textField: UIKit.UITextField)
+}
+public typealias EIArray = [Any]
+public typealias EIDictonary = [Swift.String : Any]
+public typealias EIDictonaryToDictionary = [Swift.String : [Swift.String : Any]]
+public typealias EIDictonaryArray = [[Swift.String : Any]]
+public typealias alertActionHandler = () -> Swift.Void
+extension UIKit.UIViewController {
+  @_Concurrency.MainActor(unsafe) public func doneKeyboard(dismissOnTap: Swift.Bool)
+}
+@objc @_inheritsConvenienceInitializers open class CallHandler : ObjectiveC.NSObject {
+  @objc deinit
+  @objc override dynamic public init()
+}
+extension CallingFramework.CallHandler : TwilioVoice.NotificationDelegate {
+  @objc dynamic public func callInviteReceived(callInvite: TwilioVoice.CallInvite)
+  @objc dynamic public func cancelledCallInviteReceived(cancelledCallInvite: TwilioVoice.CancelledCallInvite, error: any Swift.Error)
+}
+extension CallingFramework.CallHandler : TwilioVoice.CallDelegate {
+  @objc dynamic public func callDidStartRinging(call: TwilioVoice.Call)
+  @objc dynamic public func callDidConnect(call: TwilioVoice.Call)
+  public func call(call: TwilioVoice.Call, isReconnectingWithError error: any Swift.Error)
+  @objc dynamic public func callDidReconnect(call: TwilioVoice.Call)
+  @objc dynamic public func callDidFailToConnect(call: TwilioVoice.Call, error: any Swift.Error)
+  @objc dynamic public func callDidDisconnect(call: TwilioVoice.Call, error: (any Swift.Error)?)
+  public func callDisconnected(call: TwilioVoice.Call)
+  @objc dynamic public func callDidReceiveQualityWarnings(call: TwilioVoice.Call, currentWarnings: Swift.Set<Foundation.NSNumber>, previousWarnings: Swift.Set<Foundation.NSNumber>)
+  public func qualityWarningsUpdatePopup(_ warnings: Swift.Set<Foundation.NSNumber>, isCleared: Swift.Bool)
+  public func warningString(_ warning: TwilioVoice.Call.QualityWarning) -> Swift.String
+  public func playRingback()
+  public func stopRingback()
+}
+extension CallingFramework.CallHandler : CallKit.CXProviderDelegate {
+  @objc dynamic public func providerDidReset(_ provider: CallKit.CXProvider)
+  @objc dynamic public func providerDidBegin(_ provider: CallKit.CXProvider)
+  @objc dynamic public func provider(_ provider: CallKit.CXProvider, didActivate audioSession: AVFAudio.AVAudioSession)
+  @objc dynamic public func provider(_ provider: CallKit.CXProvider, didDeactivate audioSession: AVFAudio.AVAudioSession)
+  @objc dynamic public func provider(_ provider: CallKit.CXProvider, timedOutPerforming action: CallKit.CXAction)
+  @objc dynamic public func provider(_ provider: CallKit.CXProvider, perform action: CallKit.CXStartCallAction)
+  @objc dynamic public func provider(_ provider: CallKit.CXProvider, perform action: CallKit.CXEndCallAction)
+  @objc dynamic public func provider(_ provider: CallKit.CXProvider, perform action: CallKit.CXSetHeldCallAction)
+  @objc dynamic public func provider(_ provider: CallKit.CXProvider, perform action: CallKit.CXSetMutedCallAction)
+}
+extension CallingFramework.CallHandler : AVFAudio.AVAudioPlayerDelegate {
+  @objc dynamic public func audioPlayerDidFinishPlaying(_ player: AVFAudio.AVAudioPlayer, successfully flag: Swift.Bool)
+  @objc dynamic public func audioPlayerDecodeErrorDidOccur(_ player: AVFAudio.AVAudioPlayer, error: (any Swift.Error)?)
+}
+@_hasMissingDesignatedInitializers open class ContryCodeModelView {
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers open class OutgoingCallModelView {
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers open class SmsValidationModel {
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers open class CallValidationModel {
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class CallValidationSetUp : CallingFramework.BaseViewController {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewWillLayoutSubviews()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+extension CallingFramework.CallValidationSetUp : UIKit.UITextViewDelegate {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func textViewDidBeginEditing(_ textView: UIKit.UITextView)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func textViewDidEndEditing(_ textView: UIKit.UITextView)
+}
+extension CallingFramework.CallValidationSetUp : UIKit.UITextFieldDelegate {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func textFieldDidEndEditing(_ textField: UIKit.UITextField)
+}
+public func showAlert(title: Swift.String, message: Swift.String, view: UIKit.UIViewController)
+public func showAlertWithOkAction(title: Swift.String, message: Swift.String, view: UIKit.UIViewController, actionHandler: @escaping CallingFramework.alertActionHandler)
+public func validateEmailID(emailID: Swift.String) -> Swift.Bool
+public func validateNumber(number: Swift.String) -> Swift.Bool
+public func isValid(name: Swift.String) -> Swift.Bool
+@_hasMissingDesignatedInitializers public class ChannelMode {
+  public static var callBtn: Swift.Bool
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers open class EmailValidationModel {
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class BaseViewController : UIKit.UIViewController {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewWillAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) public func getIPDetails()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+extension CallingFramework.BaseViewController : CoreLocation.CLLocationManagerDelegate {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func locationManager(_ manager: CoreLocation.CLLocationManager, didChangeAuthorization status: CoreLocation.CLAuthorizationStatus)
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class OutgoingCallUISetup : UIKit.UIViewController {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewDidLoad()
+  @objc deinit
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewWillLayoutSubviews()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class SMSValidationSetUp : CallingFramework.BaseViewController {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewWillLayoutSubviews()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+extension CallingFramework.SMSValidationSetUp : UIKit.UITextViewDelegate {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func textViewDidBeginEditing(_ textView: UIKit.UITextView)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func textViewDidEndEditing(_ textView: UIKit.UITextView)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func textView(_ textView: UIKit.UITextView, shouldChangeTextIn range: Foundation.NSRange, replacementText text: Swift.String) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func textViewDidChange(_ textView: UIKit.UITextView)
+}
+extension CallingFramework.SMSValidationSetUp : UIKit.UITextFieldDelegate {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func textFieldDidEndEditing(_ textField: UIKit.UITextField)
+}
+public enum WebService : Swift.String {
+  case baseURLPath
+  case termConditionUrl
+  case contextToCallUrl
+  case radar_auth_key
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+extension CallingFramework.WebService : Swift.Equatable {}
+extension CallingFramework.WebService : Swift.Hashable {}
+extension CallingFramework.WebService : Swift.RawRepresentable {}

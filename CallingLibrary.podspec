@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'CallingLibrary'
-  s.version          = '0.1.5'
+  s.version          = '1.0'
   s.summary          = 'This project will add to calling ,sms and email functionality.'
 
 # This description is used to generate tags and improve search results.
@@ -31,11 +31,11 @@ This project will add to calling ,sms and email functionality.Just import the li
   s.ios.deployment_target = '11.0'
 
 #publish time to change the framework
-  #s.source_files = 'CallingLibrary/Classes/Resources/call'
+#  s.source_files = 'CallingLibrary/Classes/**/*'
   
   # Specify the location of the precompiled binaries
   #run time to change the sourcefile
-  #  s.vendored_frameworks = 'CallingLibrary.xcframework'
+    s.vendored_frameworks = 'CallingLibrary.xcframework'
   
   #s.source_files = 'Classes/**/*'
   s.swift_version = '5.0'

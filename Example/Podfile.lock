@@ -1,16 +1,23 @@
 PODS:
-  - CallingLibrary (0.1.0)
+  - CallingLibrary (1.0):
+    - TwilioVoice
+  - TwilioVoice (6.10.2)
 
 DEPENDENCIES:
   - CallingLibrary (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - TwilioVoice
 
 EXTERNAL SOURCES:
   CallingLibrary:
     :path: "../"
 
 SPEC CHECKSUMS:
-  CallingLibrary: fc96ba554d56c862a4db61952d9b1e1d6ed5b9aa
+  CallingLibrary: 4ec549aeac8b8cf2c6a389f24f00270175d65e65
+  TwilioVoice: 92caafc7a00425f1bb786b2b125b1f93f596f570
 
 PODFILE CHECKSUM: 999b5cf9fad6b9c70332196b0aa89b601727cf9e
 
-COCOAPODS: 1.12.1
+COCOAPODS: 1.14.3

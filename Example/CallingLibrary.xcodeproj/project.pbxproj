@@ -13,6 +13,7 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		A17147AE2BA9D22200CC351A /* CallingLibrary.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A17147A42BA9C91700CC351A /* CallingLibrary.xcframework */; };
 		CA4A74BB963F084E5C09D409 /* Pods_CallingLibrary_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CFD3D0DE4848C8D58241604 /* Pods_CallingLibrary_Example.framework */; };
 		E20EC73EA882B6D1C71443ED /* Pods_CallingLibrary_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C5667CB201DA17667C2D199 /* Pods_CallingLibrary_Tests.framework */; };
 /* End PBXBuildFile section */
@@ -34,21 +35,8 @@
 		};
 /* End PBXContainerItemProxy section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		A17AB2802B761684004B767A /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
-		251A1393067E1AC03E6C503A /* CallingLibrary.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = CallingLibrary.podspec; path = ../CallingLibrary.podspec; sourceTree = "<group>"; };
+		251A1393067E1AC03E6C503A /* CallingLibrary.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = CallingLibrary.podspec; path = ../CallingLibrary.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		391F836804182594D28E3573 /* Pods-CallingLibrary_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CallingLibrary_Tests.release.xcconfig"; path = "Target Support Files/Pods-CallingLibrary_Tests/Pods-CallingLibrary_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		4524541056D5279FF1B80B8F /* Pods-CallingLibrary_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CallingLibrary_Example.debug.xcconfig"; path = "Target Support Files/Pods-CallingLibrary_Example/Pods-CallingLibrary_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		466E7FFF32D973520B196066 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
@@ -65,6 +53,8 @@
 		6C5667CB201DA17667C2D199 /* Pods_CallingLibrary_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CallingLibrary_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CFD3D0DE4848C8D58241604 /* Pods_CallingLibrary_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CallingLibrary_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		803C56B1013644D053844D63 /* Pods-CallingLibrary_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CallingLibrary_Example.release.xcconfig"; path = "Target Support Files/Pods-CallingLibrary_Example/Pods-CallingLibrary_Example.release.xcconfig"; sourceTree = "<group>"; };
+		A14E32802BA097E700569825 /* CallingLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CallingLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A17147A42BA9C91700CC351A /* CallingLibrary.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = CallingLibrary.xcframework; path = ../CallingLibrary.xcframework; sourceTree = "<group>"; };
 		A17AB2722B761683004B767A /* CallingLibraryFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CallingLibraryFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2B223D1004259D45C87309B /* Pods-CallingLibrary_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CallingLibrary_Tests.debug.xcconfig"; path = "Target Support Files/Pods-CallingLibrary_Tests/Pods-CallingLibrary_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		FE4755159152CDEF1C2CF50E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
@@ -75,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A17147AE2BA9D22200CC351A /* CallingLibrary.xcframework in Frameworks */,
 				CA4A74BB963F084E5C09D409 /* Pods_CallingLibrary_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -100,6 +91,8 @@
 		315B1E98C8E8BD9337EF29E4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A17147A42BA9C91700CC351A /* CallingLibrary.xcframework */,
+				A14E32802BA097E700569825 /* CallingLibrary.framework */,
 				7CFD3D0DE4848C8D58241604 /* Pods_CallingLibrary_Example.framework */,
 				6C5667CB201DA17667C2D199 /* Pods_CallingLibrary_Tests.framework */,
 			);
@@ -199,8 +192,7 @@
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
-				2083800673D21A74E386739C /* [CP] Embed Pods Frameworks */,
-				A17AB2802B761684004B767A /* Embed Frameworks */,
+				3893BF645CD161672A7FF163 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -324,18 +316,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2083800673D21A74E386739C /* [CP] Embed Pods Frameworks */ = {
+		3893BF645CD161672A7FF163 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-CallingLibrary_Example/Pods-CallingLibrary_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/CallingLibrary/CallingLibrary.framework",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/CallingLibrary/CallingLibrary.framework/CallingLibrary",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/TwilioVoice/TwilioVoice.framework/TwilioVoice",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CallingLibrary.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwilioVoice.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -565,13 +559,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NQL478KXAA;
 				INFOPLIST_FILE = CallingLibrary/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=iphoneos*]" = "org.cocoapods.demo.C2CB-iOS-Library-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
@@ -588,13 +583,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NQL478KXAA;
 				INFOPLIST_FILE = CallingLibrary/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=iphoneos*]" = "org.cocoapods.demo.C2CB-iOS-Library-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
